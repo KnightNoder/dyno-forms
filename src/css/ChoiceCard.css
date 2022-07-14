@@ -1,0 +1,130 @@
+.choice-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.choice-card .radio-button,
+.choice-card .image {
+  margin: 0 1.5%;
+}
+
+.one,
+.two {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: solid 1px; */
+}
+
+.two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.three {
+  flex: 7;
+  padding-left: 3%;
+}
+
+.two .image-section {
+  max-width: 50px;
+  margin-top: 5px;
+}
+
+.selectStyle {
+  background-color: var(--saturnHover);
+  border: 1px solid var(--saturnBorder);
+  box-sizing: border-box;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  /* padding: 2% 2%;
+  padding: 3% 0%; */
+  cursor: pointer;
+}
+
+.deselectStyle {
+  border: 1px solid #cacaca;
+  box-sizing: border-box;
+  /* filter: drop-shadow(0px 1px 10px rgba(0; 0; 0; 0.12)); */
+  border-radius: 6px;
+  margin: 6% 0%;
+  background-color: white;
+  /* padding: 2% 2%; */
+  cursor: pointer;
+}
+
+.selectTextStyle {
+  font-style: normal;
+  font-weight: 500;
+  color: var(--saturnBorder);
+}
+
+.deselectTextStyle {
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+}
+
+.subtext {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .choice-card {
+    height: 48px;
+  }
+
+  .selectStyle {
+    margin: 5% 0%;
+    line-height: 16px;
+  }
+
+  .deselectStyle {
+    line-height: 20px;
+  }
+
+  .two .image-section {
+    height: 38px;
+  }
+
+  .choice-card .text {
+    /* margin: 0 4.5% 0 1.5%; */
+  }
+
+  .subText {
+    margin-left: -2px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .choice-card {
+    height: 64px;
+  }
+
+  .selectStyle {
+    margin: 6% 0%;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .deselectStyle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .two .image-section {
+    height: 50px;
+  }
+
+  .choice-card .text {
+    margin: 0 4.5% 0 1.5%;
+  }
+
+  .subText {
+    margin-left: 3px;
+  }
+}
