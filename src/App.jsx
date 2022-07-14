@@ -9,7 +9,9 @@ import DynamicFieldBuilder from 'rolling-fields';
 import Hello from './Components/Hello';
 import Header from './Components/render/Header';
 import ChoiceCard from './Components/render/ChoiceCard';
+import CheckBoxCard from './Components/render/CheckBoxCard';
 import { useNavigate } from 'react-router-dom';
+import InputCard from './Components/render/InputCard';
 const staticText = {
   bannerHeader: 'Know what s right for you',
   bannerSubText:
@@ -19,20 +21,27 @@ const staticText = {
   src: 'Lenovo',
 };
 
+const changeHandler = (name, value) => {
+  console.log(name, value, 'function');
+};
+
 const fields = [
   { name: 'Lava', type: 'custom', data: staticText },
-  { name: 'Kumar', data: staticText, type: 'radio' },
-  { name: 'Kumar', data: staticText, type: 'checkbox' },
-  { name: 'NR', type: 'input' },
-  { name: 'green field' },
-  { name: 'test' },
-  { name: 'show' },
+  // { name: 'Kumar', data: staticText, type: 'radio' },
+  // { name: 'Kumar', data: staticText, type: 'checkbox' },
+  { name: 'inputCard', type: 'inputcard1' },
+  { name: 'inputCard', type: 'inputcard2' },
+  { name: 'inputCard', type: 'inputcard3' },
+  // { name: 'NR', type: 'input' },
+  // { name: 'green field' },
+  // { name: 'test' },
+  // { name: 'show' },
   { type: 'submit', text: 'Submit!' },
 ];
 
 const fields2 = [
   { name: 'Lava', type: 'custom', data: staticText },
-  { name: 'Kumar', data: staticText, type: 'radio' },
+  // { name: 'Kumar', data: staticText, type: 'radio' },
   { name: 'Kumar', data: staticText, type: 'checkbox' },
   { name: 'NR', type: 'input' },
   { name: 'green field' },
@@ -41,6 +50,10 @@ const fields2 = [
   { type: 'submit', text: 'Next submit!' },
 ];
 
+const printConsole = (e) => {
+  // console.log('hello');
+  alert('hi');
+};
 const mappings = {
   custom: ({ name, data }) => (
     <Header
@@ -50,24 +63,63 @@ const mappings = {
     />
   ),
   radio: ({ name }) => (
-    <input type="radio" id="html" name="fav_language" value="HTML" />
+    <ChoiceCard
+      // clickHandler={() =>
+      //   assessment_type == '30 sec'
+      //     ? Set_short_data('category', 'weight-management')
+      //     : Set_data('category', 'weight-management')
+      // }
+      choice="Hair"
+      noImage="true"
+      // image={weightlossImage}
+      text="Weight Management"
+      value="weight-management"
+    />
   ),
   checkbox: () => (
     <>
-      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-      <label for="vehicle1"> I have a bike</label>
+      <CheckBoxCard
+        name="Hypertension"
+        value={true}
+        onChange={(name, value) => changeHandler(name, value)}
+        text="Hypertension"
+      />
     </>
   ),
-  visible: ({ name }, fieldContext) =>
-    fieldContext.isVisible && <input name={name} />,
-  string: ({ name }) => <input name={name} className="string-field" />,
+  inputcard1: ({ name, firstName }) => (
+    <InputCard
+      heading="First Name"
+      placeholder="Eg. John"
+      value=""
+      inputMode="numeric"
+      required="*"
+    />
+  ),
+  // visible: ({ name }, fieldContext) =>
+  //   fieldContext.isVisible && <input name={name} />,
+  // string: ({ name }) => <input name={name} className="string-field" />,
+  inputcard2: () => (
+    <InputCard
+      heading="Last Name"
+      placeholder="Eg. Doe"
+      value=""
+      inputMode="numeric"
+      required="*"
+    />
+  ),
+  inputcard3: () => (
+    <InputCard
+      heading="Age"
+      placeholder="Eg. 24"
+      value=""
+      inputMode="numeric"
+      required="*"
+    />
+  ),
   submit: ({ name, text }) => (
     <button
       type="submit"
-      onClick={() => {
-        "location.href = 'www.google.com';";
-        alert('hi');
-      }}
+      onClick={() => parent.open('http://localhost:3000/pageTwo')}
     >
       {text}
     </button>
@@ -98,7 +150,7 @@ export default function App() {
           }
         />
         <Route
-          path="/test"
+          path="/pageTwo"
           exact
           element={
             <form>
