@@ -1,14 +1,14 @@
-import { useState } from 'react';
-import '../../css/ChoiceCard.css';
-import Checkbox from '@mui/material/Checkbox';
-import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
-import RadioButtonUncheckedIcon from '@mui/icons-material/RadioButtonUnchecked';
+import { useState } from "react";
+import "../css/ChoiceCard.css";
+import Checkbox from "@mui/material/Checkbox";
+import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
+import RadioButtonUncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";
 
 const CheckBoxCard = ({ text, onChange, value }) => {
   return (
     <>
       <div
-        className={`choice-card ${value ? 'selectStyle' : 'deselectStyle'}`}
+        className={`choice-card ${value ? "selectStyle" : "deselectStyle"}`}
         onClick={() => {
           onChange(text, value);
         }}
@@ -24,9 +24,9 @@ const CheckBoxCard = ({ text, onChange, value }) => {
               />
             }
             sx={{
-              color: '#000000',
-              '&.Mui-checked': {
-                color: '#975169',
+              color: "#000000",
+              "&.Mui-checked": {
+                color: "#975169",
               },
             }}
             checked={value}
@@ -34,7 +34,7 @@ const CheckBoxCard = ({ text, onChange, value }) => {
           />
         </div>
         <div
-          className={`three ${value ? 'selectTextStyle' : 'deselectTextStyle'}`}
+          className={`three ${value ? "selectTextStyle" : "deselectTextStyle"}`}
         >
           {text}
         </div>

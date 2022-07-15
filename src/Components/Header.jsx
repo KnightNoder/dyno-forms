@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../css/Header.css';
+import '../css/Header.css';
 const Header = ({ bannerHeader, bannerSubText, bannerImageSrc, src }) => {
   console.log(bannerHeader, 'header');
   return (

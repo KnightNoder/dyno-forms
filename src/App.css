@@ -13,14 +13,6 @@
 html {
   --scrollbarBG: #CFD8DC;
   --thumbBG: #90A4AE;
-  --saturnBorder: #975169;
-  --saturnHover: #F9E9EE;
-  --saturnAssessment: #975169;
-  --marsBlack:#000000;
-  --saturnLight: #E8C4D2;
-  --priceText: #894255;
-  --newButtonTextColor: #975169;
-  position: relative;
 }
 
 * {
@@ -32,11 +24,6 @@ html {
 
 .back-button,.proceed-button,.assessment-image, .assessment,.generic-button ,.choice-container,.proceed-container{
   /* border: solid 1px; */
-}
-
-.progress-bar-container {
-  margin: 0 20%;
-  text-align: center;
 }
 
 .assessment h5{
@@ -54,65 +41,7 @@ html {
   margin-left: 1%;
 }
 
-
-.show-overlay-screen{
-  background: rgba(0, 0, 0, 0.55);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  position: fixed;
-  top: 0px;
-  left:0px;
-  height: 100%;
-  width: 100%;
-  display: flex;  
-  justify-content: center;
-  align-items: center;
-  font-style: normal;
-  font-weight: 700;
-  text-align: center;
-  color: #FFFFFF; 
-  z-index:999;
-  flex-direction: column;
-}
-
-img {
-}
-
-.dont-show-radio{
-  visibility: hidden;
-}
-
-.show-radio{
-  visibility: visible;
-}
-
-.hide-overlay-screen{
-  display: none;
-}
-
-.progress-bar-saturn {
-  border: 1px solid #666;
-  height: 4px;
-  width: 79%;
-  margin: 7% 0;
-}
-
-.in {
-  animation: fill 4s linear 1;
-  height: 100%;
-  background-color: pink;
-}
-
-@keyframes fill {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   
   .main-container{
     margin-left: 0%;
@@ -128,8 +57,7 @@ img {
     flex:1;
     display: flex;
     justify-content: center;
-    position: fixed;
-    bottom: -17px;
+    flex-direction: column-reverse;
   }
   
   .header-block,.self-assessment-section,.assessment-image{
@@ -177,48 +105,15 @@ img {
   .scroll-div::-webkit-scrollbar{
     color: red;
   }
-
-  .show-overlay-screen{
-    font-size: 20px;
-    line-height: 30px;
-    padding: 0 5%
-  }
-
-  .no-display{
-    display: none;
-  }
-
-  .progress-bar-image{
-    height:0px;
-    width:0px
-  }
-
-  .progress-bar-saturn-step {
-    margin-top: 5%;
-  }
-
-  .progress-bar-text {
-    font-size: 10px;
-  }
-
-  .progress-bar-container {
-    margin: 0 10%;
-  }
-  
-  .progress-bar-text {
-    width: 85%;
-    margin-left: 6%;
-    margin-top: 3%;
-  }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 480px) {
 
   .main-container{
     display: flex;
     flex-direction: column;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 7%;
+    margin-right: 7%;
     padding-top: 2%;
     margin-bottom:10%
   }
@@ -249,7 +144,7 @@ img {
   }
 
   .assessment-image{
-    flex:8;
+    flex:7;
     /* border: solid 1px; */
   }
 
@@ -258,6 +153,10 @@ img {
     margin-right: 8%;
     /* border: solid 1px; */
     /* padding-right: 5%; */
+  }
+
+  .assessment-card{
+    width: 25%;
   }
 
   .start-assessment-heading{
@@ -271,8 +170,8 @@ img {
   .start-assessment{
     flex: 2 1;
     width: 100%;
-    background: var(--saturnBorder);
-    border-top: 1px solid var(--saturnBorder) ;
+    background: #F3F3F3;
+    border-top: 1px solid #FF9186;
     box-sizing: border-box;
     border-radius: 0px 0px 24px 24px;
     display: flex;
@@ -283,7 +182,7 @@ img {
     font-size: 24px;
     line-height: 28px;
     text-align: center;
-    color: white;
+    color: #FE8276;
     cursor: pointer;
   }
 
@@ -303,55 +202,8 @@ img {
   }
 
   .main-image {
-    height: 600px;
+    height: 550px;
     width: 96%;
   }
 
-  .show-overlay-screen{
-    font-size: 36px;
-    line-height: 60px;
-    padding: 0 13%
-  }
-
-  .product-checkout{
-    display: none;
-  }
-
-  .progress-bar-image{
-    /* height:70px;
-    width:70px */
-    height:0px;
-    width:0px
-  }
-
-  .progress-bar-saturn-step {
-    margin-top: 3%;
-  }
-
-  .progress-container {
-    margin-bottom: 3%;
-  }
-  
-  .progress-bar-text {
-    width: 65%;
-    margin-left: 17%;
-    margin-top: 1%
-  }
-
-}
-
-.indexedStep {
-  color: white;
-  width: 20px;
-  height: 20px;
-  font-size: 12px;
-  background-color: rgba(211, 211, 211, 0.8);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.indexedStep.accomplished {
-  background-color:  var(--saturnBorder);
 }

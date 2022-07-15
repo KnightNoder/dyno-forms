@@ -1,3 +1,4 @@
+import "../css/InputCard.css";
 const InputCard = ({
   heading,
   placeholder,
@@ -12,14 +13,14 @@ const InputCard = ({
 }) => {
   return (
     <>
-      <h3 style={{}}>
+      <h3 className="input-card-label">
         {heading}
         <div
           style={{
-            display: 'inline-block',
-            fontSize: '20px',
-            color: '#EA2C2C',
-            marginLeft: '3px',
+            display: "inline-block",
+            fontSize: "20px",
+            color: "#EA2C2C",
+            marginLeft: "3px",
           }}
           className=""
         >
@@ -38,8 +39,8 @@ const InputCard = ({
       <span
         style={
           vibrate && !validity
-            ? { visibility: 'visible' }
-            : { visibility: 'hidden' }
+            ? { visibility: "visible" }
+            : { visibility: "hidden" }
         }
         className="error-text"
         id="two"

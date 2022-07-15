@@ -1,0 +1,278 @@
+.assessment-header{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #003660;
+    opacity: 0.96;
+    margin-top: 4%;
+}
+
+.assessment-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #546E7A;
+    opacity: 0.68;
+    padding-top: 1%;
+}
+
+.self-assessment-cards{
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+}
+
+.assessment-card {
+    background: #FFFFFF;
+    border: 1px solid #FF8277;
+    box-sizing: border-box;
+    border-radius: 24px;
+    height: 130%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stopwatch{
+    border: 1px solid #FE8276;
+    box-sizing: border-box;
+    border-radius: 24px;
+    height: 60%;
+    width: 35%;
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stopwatch .clock{
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stopwatch-text {
+    flex: 6;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.time-section{
+    flex: 2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.content .heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #333333;
+    margin-left: 10%;
+    flex: 1;
+}
+
+.content .report{
+    flex: 9;
+    display: flex;
+    flex-direction: column;
+    margin: 6%
+}
+
+.report .report-text{
+    display: flex;
+    flex: 33.33%
+}
+
+.report .report-text .tick {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.report .report-text .report-text-content{
+    flex: 9;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    padding-left: 2%;
+}
+
+.assessment-card:hover {
+    background: #FFF1EF;
+    border: 1px solid #FF9186;
+    box-sizing: border-box;
+    border-radius: 24px;
+}
+
+.assessment-card:hover .start-assessment{
+    background: #FF9186;
+    border-radius: 0px 0px 24px 24px;
+    color: white;
+}
+
+.assessment-card:hover .stopwatch{
+    background: white;
+}
+
+.start-assessment-heading .small-heading{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #003660;
+    opacity: 0.96;
+}
+
+.start-assessment-heading{
+    background: #E8F5FD;
+    border-radius: 10px;
+    height: 150px;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 10%;
+    padding-left: 8%;
+    position: relative;
+}
+
+.assessment-list{
+    list-style: none;
+    margin-left: 4%;
+    margin-top: 1%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+    color: #0B4870;
+}
+
+.assessment-list li::before{
+    content: "\2022";
+    color: blue;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.img-notes{
+    position: absolute;
+    bottom: 5%;
+    right: 1%;
+}
+
+.get-started{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+.assessment-card-small{
+    background: #FFFFFF;
+    border: 1px solid #C9C9C9;
+    box-sizing: border-box;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 155px;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 4%;
+}
+
+.top-heading,.bottom-heading,.content{
+    flex:1;
+}
+
+.assessment-card-small .content {
+    display: flex;
+    align-items: flex-start;
+}
+.assessment-card-small .submit{
+    flex: .5;
+    background: #FE8276;
+    border-radius: 8px;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 5%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 50px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.top-heading{
+    display: flex;
+}
+
+.top-heading .heading{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    flex: 1;
+    margin-left: 4%;
+    margin-top: 4%;
+}
+
+.bottom-heading .heading{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    flex: 1;
+    margin-left: 4%;
+    margin-top: 4%;
+}
+
+.top-heading .stopwatch{
+    flex: 1
+}
+
+.assessment-card-small .content{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #878787;
+    margin-left: 4%;
+    width: 84%
+}
+
+
+@media only screen and (min-width: 767px) {
+    .start-assessment-heading,.get-started,.assessment-card-section {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header-block, .self-assessment-section {
+        display: none;
+    }
+}
