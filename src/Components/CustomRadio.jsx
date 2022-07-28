@@ -8,6 +8,7 @@ const CustomRadio = ({
   state_Obj,
   selected_Key,
   question,
+  key,
 }) => {
   return (
     <>
@@ -31,6 +32,7 @@ const CustomRadio = ({
               name: option.value,
             }}
             checked={state_Obj[question] == option.value}
+            key={key}
           />
         </div>
         <div
