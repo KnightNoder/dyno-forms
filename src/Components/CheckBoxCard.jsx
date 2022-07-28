@@ -4,13 +4,13 @@ import Checkbox from "@mui/material/Checkbox";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import RadioButtonUncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";
 
-const CheckBoxCard = ({ text, onChange, value }) => {
+const CheckBoxCard = ({ text, onchange, value, state_Obj, selected }) => {
   return (
     <>
       <div
         className={`choice-card ${value ? "selectStyle" : "deselectStyle"}`}
         onClick={() => {
-          onChange(text, value);
+          onchange(text, !value);
         }}
       >
         <div className="one">
@@ -29,7 +29,9 @@ const CheckBoxCard = ({ text, onChange, value }) => {
                 color: "#975169",
               },
             }}
-            checked={value}
+            checked={
+              state_Obj["Do you have any pre-existing problems?"]?.[value]
+            }
             fontSize="small"
           />
         </div>

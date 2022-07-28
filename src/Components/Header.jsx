@@ -1,7 +1,6 @@
-import React from 'react';
-import '../css/Header.css';
+import { React } from "react";
+import "../css/Header.css";
 const Header = ({ bannerHeader, bannerSubText, bannerImageSrc, src }) => {
-  console.log(bannerHeader, 'header');
   return (
     <div className="header-block">
       <div className="heading">{bannerHeader}</div>

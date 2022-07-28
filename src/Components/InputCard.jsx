@@ -9,7 +9,7 @@ const InputCard = ({
   onchange,
   inputMode,
   validity,
-  numberCheck,
+  inputCheck,
 }) => {
   return (
     <>
@@ -29,19 +29,15 @@ const InputCard = ({
       </h3>
       <input
         className="input"
-        onChange={onchange}
+        onChange={(e) => onchange(heading, e.target.value)}
         value={value}
         inputMode={inputMode}
         type="text"
         placeholder={placeholder}
-        onKeyDown={numberCheck}
+        // onKeyDown={numberCheck}
       />
       <span
-        style={
-          vibrate && !validity
-            ? { visibility: "visible" }
-            : { visibility: "hidden" }
-        }
+        style={!value ? { visibility: "visible" } : { visibility: "hidden" }}
         className="error-text"
         id="two"
       >

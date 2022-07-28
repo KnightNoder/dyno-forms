@@ -1,0 +1,466 @@
+
+.recommendation-section {
+    display: flex;
+    height: 400px;
+    margin-top: 3%;
+}
+
+.recommendation-section
+,.doctor-info
+,.product-info
+/* ,.logo  */
+ {
+    /* border: solid 1px; */
+}
+
+.recommendation-section{
+    height: 600px
+}
+
+.doctor-info {
+    flex: 3;
+    background: #FFFFFF;
+    border: 1px solid #D4DAE1;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+.doctor-info2 {
+    flex: 3;
+    background: #FFFFFF;
+    border: 1px solid #D4DAE1;
+    box-sizing: border-box;
+    border-radius: 16px;
+    height: 450px
+}
+
+.details .image-section{
+    flex:2
+}
+
+.product-info{
+    flex: 7;
+}
+
+.logo{
+    width: 50%;
+    margin: 10% 0 0 15%;
+
+}
+
+.logo .image{
+    width: 100%;
+}
+
+
+.doctor-info .details {
+    display: flex;
+    margin: 30% 0 0 15%;
+}
+
+.doctor-info2 .details2 {
+    display: flex;
+    margin: 8% 3% 0 15%;
+}
+
+
+.product-card .image-section {
+    flex: 2;
+    /* border: solid 1px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-call {
+    height: 50%;
+    width: 70%;
+    margin: auto;
+}
+
+.name-designation{
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.name,.designation {
+    flex: 1;
+    font-style: normal;
+    line-height: 26px;
+    color: #333333;
+}
+.name {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.designation{
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 2%;
+    margin-right: 3%;
+}
+
+.booking{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: 'black';
+}
+
+.recommendation-section h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 26px;
+    color: #333333;
+    /* border: solid 1px; */
+    margin: 20% 0 0 15%;
+}
+
+.product-info{
+    /* border: solid 1px; */
+}
+
+.product-header{
+    display: flex;
+    justify-content: space-between
+}
+
+.product-info .product-header h3{
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    color: #003660;
+    /* border: solid 1px; */
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.product-header, .product-info .product-header h3 {
+    /* border: solid 1px; */
+}
+
+.product-header .bmi{
+    background: var(--saturnLight);
+    border-radius: 16px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+
+.bmi .bmi-text{
+    font-size: 25px;
+    color: #003660;
+}
+
+.bmi .bmi-number{
+    background: var(--saturnBorder);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    outline: white solid 5px;
+}
+
+.product-card{
+    display: flex;
+    margin: 5% 0 0 5%;
+    /* height: 300px; */
+    height: 330px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 16px
+}
+
+.product-card .image-section{
+    /* background: #FFF1EF; */
+    /* background: #f9dfd1; */
+    /* background: var(--saturnHover); */
+    background: var(--light);
+    border-radius: 16px 16px 16px 16px;
+    height: 100%;
+}
+
+.product-card .details{
+    flex: 7;
+    /* border: solid 1px; */
+}
+
+.product-card .details .heading {
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    color: #333333;
+}
+
+.image-section .image{
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+.details .buy-button {
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+.product-card .details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+.reco-1, .reco-2 {
+    flex: 0.3;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 7px;
+    margin: 3% 0%;
+    padding: 1% 0;
+    height: 50%;
+}
+
+.reco-1{
+    border: 1px solid #0CBC8B;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0CBC8B;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reco-2{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #E9A83D;
+    border: 1px solid #E9A83D;
+    width: 20%;
+    text-align: center;
+}
+
+.product-card .details .heading,
+.product-card .details .subtext,
+.product-card .details .price {
+    flex: 1;
+    /* border: solid 1px; */
+}
+
+.product-card .details .subtext{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #878787;
+}
+
+.product-card .details .price {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    letter-spacing: 0.18px;
+    color: var(--priceText);
+    display: flex;
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 600px){
+    .recommendation-section, .product-card {
+        flex-direction: column;
+    }
+
+    .product-card {
+        height: 540px;
+        margin: 5% 10%;
+        position: relative;
+    }
+
+    .doctor-info{
+        height: 400px;
+        margin: 0 10%;
+    }
+
+    .doctor-info2{
+        height: 400px;
+        margin: 0 10%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .doctor-info .details {
+        margin: 5% 0 0 0%
+    }
+
+    .shown-h3{
+        display: none;
+    }
+
+    .hidden-h3{
+        font-size: 20px;
+    }
+
+    .heading {
+        font-size: 16px;
+        margin-top: 3%;
+    }
+
+    .product-info h3  {
+        margin: 10% 0 0 10%;
+    }
+
+    .product-card .image-section .image{
+        /* height: 80%; */
+        /* height: 100%;
+        width: 100%; */
+        height: 85%;
+        width: 77%;
+    }
+
+    .product-card .image-section{
+        flex: 12;
+    }
+
+    .recommendation-section h2{
+        display: none;
+    }
+
+    .doctor-info{
+        border: none;
+        margin-bottom: 10%;
+    }
+
+    .doctor-info2{
+        border: none;
+    }
+
+    .doctor-info2 .details2{
+        margin: 8% 0 0 0%;
+    }
+
+    .product-card .details{
+        margin-left: 0%;
+    }
+
+    .details .buy-button{
+        width: 90%;
+        margin: 0 5% 3% 5%;
+        height: 20%;
+    }
+
+    .details .heading, .details .price{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .product-card .image-section{
+        border-radius: 16px 16px 0px 0px;
+    }
+    
+    .product-card .details .buy-button {
+        /* flex: 1.3; */
+    }
+
+    .product-card .details .price {
+        font-size: 16px;
+    }
+
+    .strike-text{
+        font-size: 12px;
+        color: black
+    }
+
+    .reco-1{
+        position: absolute;
+        top: 0px;
+        height: 6%;
+        width: 55%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+    }
+
+    .product-header h3{
+        flex:2
+    }
+    .product-header .bmi{
+        flex: .8;
+        margin-right: 10%;
+    }
+
+    .bmi .bmi-text{
+        font-size: 12px;
+    }
+
+    .bmi .bmi-number{
+        font-size: 13px;
+        height: 20px;
+        width: 20px;
+        margin-right: 3%;
+    }
+
+    .product-header{
+        margin-top: 3%;
+    }
+} 
+
+@media only screen and (min-width: 600px) {
+    .hidden-h3{
+        display: none;
+    }
+
+    .product-info h3 {
+        font-size: 28px;
+        margin: 1% 0 0 5%;
+    }
+
+    .availability-text{
+        margin: 15% 10% 0 10%;
+    }
+
+    .doctor-info{
+    }
+
+    .product-card .details .heading{
+        font-size: 24px;
+        width: 90%;
+    }
+
+    .product-card .image-section .image{
+        height: 100%;
+        width: 100%;
+    }
+
+    .product-card .image-section{
+        flex:3
+    }
+    
+    .product-card .details .buy-button {
+        /* flex: .8; */
+        height: 50px;
+    }
+
+    .strike-text{
+        font-size: 16px;
+        color: black
+    }
+}

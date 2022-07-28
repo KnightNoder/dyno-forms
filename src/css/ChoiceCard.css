@@ -73,6 +73,10 @@
   margin-top: 5px;
 }
 
+.choice-card {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 600px) {
   .choice-card {
     height: 48px;

@@ -48,10 +48,11 @@ const SelfAssessmentSection = ({ set_url_function }) => {
                     <img src={pic3} alt="" />
                   </div>
                   <div className="report-text-content">
-                    Get your analysis in 30 seconds
+                    Complete a short questionnaire to book your FREE
+                    consultation
                   </div>
                 </div>
-                <div className="report-text">
+                {/* <div className="report-text">
                   <div className="tick">
                     <img src={pic3} alt="" />
                   </div>
@@ -66,66 +67,69 @@ const SelfAssessmentSection = ({ set_url_function }) => {
                   <div className="report-text-content">
                     Get recommended products that suit your concerns
                   </div>
-                </div>
+                </div> */}
                 <div className="report-text"></div>
               </div>
             </div>
             <div
               className="start-assessment"
-              onClick={() => {
-                navigate("/choice");
-                set_url_function("selectCategory");
+              onClick={(e) => {
+                e.preventDefault();
+                navigate("/" + "?category=yes");
+                set_url_function("/" + "?category=yes");
               }}
             >
               Start Assessment
             </div>
           </div>
-          {/* <div className='assessment-card'>
-                <div className='time-section'>
-                    <div className='stopwatch'>
-                        <div className='clock'>
-                            <img src={pic2} alt=""/>
-                        </div>
-                        <div className='stopwatch-text'>
-                            6 Mins
-                        </div>
-                    </div>
+          <div className="assessment-card">
+            <div className="time-section">
+              <div className="stopwatch">
+                <div className="clock">
+                  <img src={pic2} alt="" />
                 </div>
-                <div className='content'>
-                    <div className='heading'>
-                        Detailed Self Assessment
-                    </div>
-                    <div className='report'>
-                        <div className='report-text'>
-                            <div className='tick'>
-                                <img src={pic3} alt="" />
-                            </div>
-                            <div className='report-text-content'>
-                                Get a complete assessment report in 6 minutes
-                            </div>
-                        </div>
-                        <div className='report-text'>
-                            <div className='tick'>
-                                <img src={pic3} alt="" />   
-                            </div>
-                            <div className='report-text-content'>
-                                Get a Free Doctor’s Consultation upon booking appointment 
-                            </div>
-                        </div>
-                        <div className='report-text'>
-                            <div className='tick'>
-                                <img src={pic3} alt="" />
-                            </div>
-                            <div className='report-text-content'>
-                                Get a Personalized Treatment Plan and assistance
-                            </div>
-                        </div>
-                    </div>
+                <div className="stopwatch-text">6 Mins</div>
+              </div>
+            </div>
+            <div className="content">
+              <div className="heading">Detailed Self Assessment</div>
+              <div className="report">
+                <div className="report-text">
+                  <div className="tick">
+                    <img src={pic3} alt="" />
+                  </div>
+                  <div className="report-text-content">
+                    Get a detailed assessment report in 6 min
+                  </div>
                 </div>
-                <div className='start-assessment' onClick={() => navigate('/choice')}>
-                    Start Assessment
+                <div className="report-text">
+                  <div className="tick">
+                    <img src={pic3} alt="" />
+                  </div>
+                  <div className="report-text-content">
+                    Book a FREE consultation with doctor to get a treatment plan
+                  </div>
                 </div>
-            </div> */}
+                {/* <div className="report-text">
+                  <div className="tick">
+                    <img src={pic3} alt="" />
+                  </div>
+                  <div className="report-text-content">
+                    Get a Personalized Treatment Plan and assistance
+                  </div>
+                </div> */}
+              </div>
+            </div>
+            <div
+              className="start-assessment"
+              onClick={() => {
+                navigate("/?category=yes");
+                set_url_function("?category=yes");
+              }}
+            >
+              Start Assessment
+            </div>
+          </div>
         </div>
       </div>
 
@@ -140,7 +144,15 @@ const SelfAssessmentSection = ({ set_url_function }) => {
           <div className="content">
             Get recommended products that suit your concerns
           </div>
-          <div className="submit" onClick={() => navigate("/choice")}>
+          <div
+            className="submit"
+            onClick={() => {
+              {
+                navigate("/?category=yes");
+                set_url_function("?category=yes");
+              }
+            }}
+          >
             Start Assessment
           </div>
         </div>
@@ -153,7 +165,15 @@ const SelfAssessmentSection = ({ set_url_function }) => {
           <div className="content">
             Get a free Doctor’s consultation and Personalized Treatment Plan
           </div>
-          <div className="submit" onClick={() => navigate("/choice")}>
+          <div
+            className="submit"
+            onClick={() => {
+              {
+                navigate("/" + "?category=yes");
+                set_url_function("/" + "?category=yes");
+              }
+            }}
+          >
             Start Assessment
           </div>
         </div>
